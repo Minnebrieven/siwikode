@@ -4,7 +4,7 @@ function login() {
 
 
     if(userName=="admin123"&&userPass=="admin123"){
-        window.location = "http://localhost/siwikode/dashboard.html";
+        window.location = "./dashboard.html";
     }
     else{
         alert("Username atau Password Salah")
