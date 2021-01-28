@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SIWIKODE</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"></script>
+  	<script defer src="https://use.fontawesome.com/releases/v5.15.1/js/v4-shims.js"></script>  
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    .sidenav {
+        height: 100%;
+        width: 220px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #e27802;
+        overflow-x: hidden;
+        padding-top: 20px;
+        margin-top: 50px;
+    }
+
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        color: #58391c;
+        display: block;
+    }
+
+    .sidenav a:hover {
+        background-color: #FFFFFF;
+    }
+
+    .nactive{
+        background-color: #FFFFFF;
+    }
+
+    .main {
+        width: 100%;
+        height: 100%;
+        margin-left: 230px; /* Same as the width of the sidenav */
+        margin-right: 15px;
+        padding: 0px 10px;
+    }
+
+    .main-tittle{
+        margin-top: 20px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    .order-card {
+    color:  #6a492b;
+    }
+
+    .bg-c-blue {
+        background: linear-gradient(45deg,#e27802,#f88f01);
+    }
+
+    .card {
+        border-radius: 5px;
+        -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+        box-shadow: 0 1px 2.94px 0.06px rgba(4,26,55,0.16);
+        border: none;
+        margin-bottom: 30px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .card .card-block {
+        padding: 25px;
+    }
+
+    .order-card i {
+        font-size: 26px;
+    }    
+    </style>
+
+  </head>
+  <body>
+      <header class="navbar sticky-top flex-md-nowrap p-0 shadow" style="background-color: #f88f01;height: 50px;">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"><i class="fas fa-spa" style="color:6a492b"></i> <img src="bahan/Logo Siwikode Black-01.png" height="30" alt=""></a>
+        <ul class="navbar-nav px-3">
+            <li class="nav-item text-nowrap">
+              <a class="nav-link" href="./index.html" style="color: #6a492b;"><i class="fa fa-sign-out-alt"></i> Sign out</a>
+            </li>
+          </ul>
+      </header>
+	<div class="container-fluid">
+        <div class="row">
+            <div class="sidenav">
+                <a href="./dashboard.html"><i class="fa fa-tachometer-alt"></i> Dashboard</a>
+                <a href="./data_rekreasi.html" class="nactive"><i class="fa fa-umbrella-beach"></i> Data Wisata Rekreasi</a>
+                <a href="./data_kuliner.html"><i class="fa fa-utensils"></i> Data Wisata Kuliner</a>
+                <a href="./data_testimoni.html"><i class="fa fa-comments"></i> Data Testimoni</a>
+            </div>
+            <div class="main">
+                <div class="main-tittle">
+                    <h1>Data Wisata Rekreasi</h1>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="./registrasi_rekreasi.html" class="btn btn-outline-warning"><i class="fa fa-plus"></i> Tambah Data</a>                            
+                            </div>
+                            <div class="col-6">
+                                <div class="input-group mb-3">                    
+                                    <input type="text" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="basic-addon2">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-outline-warning" type="button"><i class="fa fa-search"></i> Search</button>
+                                    </div>
+                                  </div>
+                        </div>
+                        </div>
+                        <br>
+                        <h4 class="text-center">Data Rekreasi</h4>
+                        <br>
+                        <table class="table table-striped table-hover text-center">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        No
+                                    </th>
+                                    <th>
+                                        Nama
+                                    </th>
+                                    <th>
+                                        Jenis Wisata
+                                    </th>
+                                    <th>
+                                        Rating
+                                    </th>
+                                    <th>
+                                        Kontak Person
+                                    </th>
+                                    <th>
+                                        Upload Foto
+                                    </th>
+                                    <th>
+                                        Action
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="table">
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        Taman Wisata Wiladatika
+                                    </td>
+                                    <td>
+                                        Taman
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+                                    </td>
+                                    <td>
+                                        Andre
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/wiladatika.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_wiladatika.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_wiladatika.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        Masjid Kubah Emas Dian Al-Mahri
+                                    </td>
+                                    <td>
+                                        Tempat Ibadah
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half"></i>
+                                    </td>
+                                    <td>
+                                        Ali
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/kubahmas.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_kubahmas.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_kubahmas.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        Taman Wisata Pasir Putih
+                                    </td>
+                                    <td>
+                                        Kolam Renang
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td>
+                                        Supardi
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/pasirputih.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_pasirputih.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_pasirputih.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        Situ Pengasinan
+                                    </td>
+                                    <td>
+                                        Taman
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star-half"></i>
+                                    </td>
+                                    <td>
+                                        Asep
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/situpengasinan.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_situpengasinan.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_situpengasinan.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        5
+                                    </td>
+                                    <td>
+                                        D'Kandang Amazing Farm
+                                    </td>
+                                    <td>
+                                        Taman
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star-half"></i>
+                                    </td>
+                                    <td>
+                                        Agung
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/amazingfarm.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_amazingfarm.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_amazingfarm.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        6
+                                    </td>
+                                    <td>
+                                        Depok Fantasi Waterpark
+                                    </td>
+                                    <td>
+                                        Waterpark/Kolam Renang
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star"></i>
+                                    </td>
+                                    <td>
+                                        Dinda
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/waterpark.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_waterpark.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_waterpark.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        7
+                                    </td>
+                                    <td>
+                                        Godong Ijo
+                                    </td>
+                                    <td>
+                                        Taman
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i>
+                                    </td>
+                                    <td>
+                                        Lanang
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/godongijo.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_godongijo.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_godongijo.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        8
+                                    </td>
+                                    <td>
+                                        Taman Lembah Gurame
+                                    </td>
+                                    <td>
+                                        Taman
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star-half"></i>
+                                    </td>
+                                    <td>
+                                        Bambang
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/lembah.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_lembahgurame.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_lembahgurame.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        9
+                                    </td>
+                                    <td>
+                                        Studio Alam TVRI Depok
+                                    </td>
+                                    <td>
+                                        Taman
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i><i class="fa fa-star-half"></i>
+                                    </td>
+                                    <td>
+                                        Faisal
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/studioalam.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_studioalam.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_studioalam.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                                <tr class="table">
+                                    <td>
+                                        10
+                                    </td>
+                                    <td>
+                                        Arina Waterpark
+                                    </td>
+                                    <td>
+                                        Waterpark/Kolam Renang
+                                    </td>
+                                    <td>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></i>
+                                    </td>
+                                    <td>
+                                        Raihan
+                                    </td>
+                                    <td>
+                                        <a href="./bahan/place/arina.jpg">Link</a>
+                                    </td>
+                                    <td>
+                                        <a href="./detail_arinawaterpark.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-eye"></span> View</a>   <a href="./edit_arinawaterpark.html" class="btn btn-outline-warning btn-sm"><span class="fa fa-edit"></span> Edit</a>   <a href="#" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span> Delete</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+  </body>
+</html>

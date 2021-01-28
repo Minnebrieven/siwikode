@@ -1,0 +1,28 @@
+@font-face {
+  font-family:brlnsd;
+  src: url('/fonts/Berlin_Bold.ttf');
+}
+
+@font-face {
+  font-family: helvetica;
+  src: url('/fonts/Helvetica\ 400.ttf');
+}
+
+@font-face {
+  font-family: helveticamed;
+  src: url('/fonts/HelveticaNeueMed.ttf');
+}
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
