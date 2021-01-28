@@ -4,7 +4,7 @@ function login() {
 
 
     if(userName=="admin123"&&userPass=="admin123"){
-        window.location = "./dashboard.html";
+        window.location.href = "./dashboard.html";
     }
     else{
         alert("Username atau Password Salah")
